@@ -3,88 +3,111 @@
 <head>
     <meta charset="utf-8">
     <title>move</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="src/index.js"></script>
     <script src="blotter.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/liquidDistortMaterial.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/rollingDistortMaterial.min.js"></script>
 </head>
 
 <body>
-<div class="container">
-    <div class="item-a">
-        <h1 class="anim">
-            <span>m</span>
-            <span>o</span>
-            <span>v</span>
-            <span>e</span>
-        </h1>
-    </div>
 
-    <div id="blotter-c" class="item-b">
-        <script>
-            const textC = new Blotter.Text('move', {
-                paddingRight: 50,
-                paddingLeft: 50,
-                paddingTop: 100,
-                family: 'Inter',
-                size: 160,
-                fill: '#FF0000'
-            });
+<!--<div class="container">-->
+<!--<div class="item-a">-->
+<!--<h2 class="anim">-->
+<!--<span>m</span>-->
+<!--<span>o</span>-->
+<!--<span>v</span>-->
+<!--<span>e</span>-->
+<!--</h2>-->
+<!--</div>-->
 
-            const materialC = new Blotter.LiquidDistortMaterial();
-            materialC.uniforms.uSpeed.value = 0.3;
-            materialC.uniforms.uVolatility.value = 0.1;
-            materialC.uniforms.uSeed.value = 1;
+<div id="blotter-c" class="item-d">
+    <script>
+        const textC = new Blotter.Text('move', {
+            paddingRight: 50,
+            paddingLeft: 50,
+            paddingTop: 100,
+            family: 'Inter',
+            size: 160,
+            fill: '#FF0000'
+        });
 
-            const blotterC = new Blotter(materialC, {
-                texts: textC
-            });
+        const materialC = new Blotter.LiquidDistortMaterial();
+        materialC.uniforms.uSpeed.value = 0.3;
+        materialC.uniforms.uVolatility.value = 0.1;
+        materialC.uniforms.uSeed.value = 1;
 
-            const scopeC = blotterC.forText(textC);
-            scopeC.appendTo(document.getElementById('blotter-c'));
-        </script>
-    </div>
+        const blotterC = new Blotter(materialC, {
+            texts: textC
+        });
 
-    <div id="blotter-d" class="item-c">
-        <script>
-            const textD = new Blotter.Text('move', {
-                paddingRight: 50,
-                paddingLeft: 50,
-                paddingTop: 100,
-                family: 'Inter',
-                size: 160,
-                fill: '#FF0000'
-            });
-
-            const materialD = new Blotter.RollingDistortMaterial();
-            materialD.uniforms.uSineDistortSpread.value = 0.1;
-            materialD.uniforms.uSineDistortCycleCount.value = 2;
-            materialD.uniforms.uSineDistortAmplitude.value = 0.1;
-            materialD.uniforms.uNoiseDistortVolatility.value = 20;
-            materialD.uniforms.uNoiseDistortAmplitude.value = 0.01;
-            materialD.uniforms.uRotation.value = 170;
-            materialD.uniforms.uSpeed.value = 0.7;
-
-            const blotterD = new Blotter(materialD, {
-                texts: textD
-            });
-
-            const scopeD = blotterD.forText(textD);
-            scopeD.appendTo(document.getElementById('blotter-d'));
-        </script>
-    </div>
-
-    <div class="item-d">
-        <h1 class="anim">
-            <span>m</span>
-            <span>o</span>
-            <span>v</span>
-            <span>e</span>
-        </h1>
-    </div>
+        const scopeC = blotterC.forText(textC);
+        scopeC.appendTo(document.getElementById('blotter-c'));
+    </script>
 </div>
 
+<div id="blotter-d" class="item-b">
+    <script>
+        const textD = new Blotter.Text('next', {
+            paddingRight: 1,
+            paddingLeft: 1,
+            paddingTop: 1,
+            family: 'Inter',
+            size: 60,
+            fill: '#FF0000'
+        });
+
+        const materialD = new Blotter.RollingDistortMaterial();
+        materialD.uniforms.uSineDistortSpread.value = 0.1;
+        materialD.uniforms.uSineDistortCycleCount.value = 2;
+        materialD.uniforms.uSineDistortAmplitude.value = 0.1;
+        materialD.uniforms.uNoiseDistortVolatility.value = 20;
+        materialD.uniforms.uNoiseDistortAmplitude.value = 0.01;
+        materialD.uniforms.uRotation.value = 170;
+        materialD.uniforms.uSpeed.value = 0.7;
+
+        const blotterD = new Blotter(materialD, {
+            texts: textD
+        });
+
+        const scopeD = blotterD.forText(textD);
+        scopeD.appendTo(document.getElementById('blotter-d'));
+    </script>
+</div>
+
+<div class="item-c">
+    <h1 class="anim">
+        <span>v</span>
+        <span>a</span>
+        <span>r</span>
+        <span>i</span>
+        <span>a</span>
+        <span>b</span>
+        <span>l</span>
+        <span>e</span>
+        <span> </span>
+        <span>f</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+    </h1>
+</div>
+</div>
+
+<div class="scene">
+    <div class="carousel">
+        <span class="carousel__cell">f</span>
+        <span class="carousel__cell">a</span>
+        <span class="carousel__cell">b</span>
+        <span class="carousel__cell">e</span>
+        <span class="carousel__cell">l</span>
+        <span class="carousel__cell">w</span>
+        <span class="carousel__cell">e</span>
+        <span class="carousel__cell">l</span>
+        <span class="carousel__cell">t</span>
+    </div>
+</div>
 
 <div class="second">
 
@@ -92,6 +115,7 @@
     </script>
 
 </div>
+
 
 </body>
 </html>
