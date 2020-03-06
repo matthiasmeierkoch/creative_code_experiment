@@ -25,7 +25,11 @@ body {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: #010101;
+    background: linear-gradient(278deg, #1565C0, #f5af19, #56B870);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 6s ease infinite;
+    -moz-animation: AnimationName 6s ease infinite;
+    animation: AnimationName 6s ease infinite;
 }
 
 .container {
@@ -59,7 +63,7 @@ body {
     position: absolute;
     user-select: none;
     margin: 0, auto;
-    margin-top: 45vh;
+    margin-top: 20vh;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -68,7 +72,7 @@ body {
 }
 
 .item-d {
-    margin-top: 50vh;
+    margin-top: 20vh;
     margin-left: 25vw;
     align-items: center;
     justify-content: center;
@@ -165,8 +169,8 @@ span {
     height: 140px;
     position: relative;
     perspective: 1000px;
-    margin-top: 10vh;
-    margin-left: 30vh;
+    margin-top: 20vh;
+    margin-left: 50vh;
     font-weight: 700;
 }
 
@@ -177,7 +181,7 @@ span {
     transform-style: preserve-3d;
     color: red;
     font-size: 3rem;
-    perspective: 55rem;
+    perspective: 200rem;
     transform: rotate(-10deg);
 
 }
@@ -190,13 +194,17 @@ span {
     top: 10px;
 }
 
-span {
+.carousel {
     animation-name: typocircle;
     animation-direction: normal;
     animation-duration: 3000ms;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
     position: relative;
-    margin-left: -1rem;
+    margin-left: 5rem;
+    transform: rotate(-45deg);
+
+
 }
 
 .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
@@ -212,10 +220,48 @@ span {
 @keyframes typocircle {
     from {
         transform: rotateY(  0deg) translateZ(288px);
+
     }
     to {
         transform: rotateY(  360deg) translateZ(288px);
 
     }
 
+}
+
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 23%
+    }
+    50% {
+        background-position: 100% 78%
+    }
+    100% {
+        background-position: 0% 23%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 23%
+    }
+    50% {
+        background-position: 100% 78%
+    }
+    100% {
+        background-position: 0% 23%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 23%
+    }
+    50% {
+        background-position: 100% 78%
+    }
+    100% {
+        background-position: 0% 23%
+    }
 }
