@@ -89,8 +89,6 @@ h2 {
     line-height: 10vw;
 }
 
-
-
 span {
     animation-name: animate-fit;
     animation-direction: alternate;
@@ -100,7 +98,6 @@ span {
     position: relative;
     margin-left: -1rem;
 }
-
 
 .scene {
     width: 210px;
@@ -142,27 +139,51 @@ span {
     margin-left: 10rem;
     transform: rotate(-100deg);
 
-
 }
 
-.carousel__cell:nth-child(1) { transform: rotate(8deg)      rotateY(  0deg) translateZ(100px); }
-.carousel__cell:nth-child(2) { transform: rotate(16deg)     rotateY( 40deg) translateZ(200px); }
-.carousel__cell:nth-child(3) { transform: rotate(32deg)     rotateY( 80deg) translateZ(300px); }
-.carousel__cell:nth-child(4) { transform: rotate(40deg)     rotateY(120deg) translateZ(100px); }
-.carousel__cell:nth-child(5) { transform: rotate(48deg)     rotateY(160deg) translateZ(360px); }
-.carousel__cell:nth-child(6) { transform: rotate(56deg)     rotateY(200deg) translateZ(300px); }
-.carousel__cell:nth-child(7) { transform: rotate(72deg)     rotateY(240deg) translateZ(150px); }
-.carousel__cell:nth-child(8) { transform: rotate(80deg)     rotateY(280deg) translateZ(250px); }
-.carousel__cell:nth-child(9) { transform: rotate(88deg)     rotateY(320deg) translateZ(350px); }
+.carousel__cell:nth-child(1) {
+    transform: rotate(8deg) rotateY(0deg) translateZ(100px);
+}
 
+.carousel__cell:nth-child(2) {
+    transform: rotate(16deg) rotateY(40deg) translateZ(200px);
+}
+
+.carousel__cell:nth-child(3) {
+    transform: rotate(32deg) rotateY(80deg) translateZ(300px);
+}
+
+.carousel__cell:nth-child(4) {
+    transform: rotate(40deg) rotateY(120deg) translateZ(100px);
+}
+
+.carousel__cell:nth-child(5) {
+    transform: rotate(48deg) rotateY(160deg) translateZ(360px);
+}
+
+.carousel__cell:nth-child(6) {
+    transform: rotate(56deg) rotateY(200deg) translateZ(300px);
+}
+
+.carousel__cell:nth-child(7) {
+    transform: rotate(72deg) rotateY(240deg) translateZ(150px);
+}
+
+.carousel__cell:nth-child(8) {
+    transform: rotate(80deg) rotateY(280deg) translateZ(250px);
+}
+
+.carousel__cell:nth-child(9) {
+    transform: rotate(88deg) rotateY(320deg) translateZ(350px);
+}
 
 @keyframes typocircle {
     from {
-        transform: rotateY(  0deg) translateZ(0px);
+        transform: rotateY(0deg) translateZ(0px);
 
     }
     to {
-        transform: rotateY(  360deg) translateZ(0px);
+        transform: rotateY(360deg) translateZ(0px);
 
     }
 
@@ -275,4 +296,27 @@ li:nth-child(21) {
         transform: rotateX(-100deg) rotate(-360deg);
     }
 
+}
+
+img {
+    height: 16px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    font-weight: 600;
+}
+
+a:hover{
+    text-decoration: black;
+    color: #FF0000;
+}
+
+.github {
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    font-weight: 600;
+    margin-top: 93vh;
 }
