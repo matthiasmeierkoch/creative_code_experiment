@@ -19,6 +19,11 @@ canvas {
     height: 100%
 }
 
+::selection {
+    background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -27,6 +32,7 @@ body {
     overflow: hidden;
     background: #D7D2BD;
     display: flex;
+    user-select: ;
 }
 
 .container {
@@ -310,10 +316,20 @@ a {
     font-weight: 600;
 }
 
-a:hover{
+.github a:hover{
     text-decoration: black;
     color: #FF0000;
-    font
+    fill: #FF0000;
+;
+}
+
+.github p svg{
+    height: 16px;
+    fill: #000000
+}
+
+.github svg:hover{
+    fill: #FF0000
 }
 
 .github {
@@ -321,4 +337,5 @@ a:hover{
     color: #000000;
     font-weight: 600;
     margin-top: 93vh;
+    text-align: left;
 }
