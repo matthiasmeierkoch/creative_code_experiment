@@ -104,7 +104,7 @@ span {
     height: 140px;
     position: relative;
     perspective: 1000px;
-    margin-top: 20vh;
+    margin-top: 30vh;
     margin-left: 50vh;
     font-weight: 800;
 }
@@ -190,7 +190,7 @@ span {
 }
 
 ul {
-    margin-top: 20%;
+    margin-top: 5vh;
     list-style: none;
     font-size: 4vw;
     transform-style: preserve-3d;
@@ -287,6 +287,7 @@ li:nth-child(21) {
     transform: translate(-50%, -50%) rotate(306deg) translateY(-260px) rotateX(90deg);
 }
 
+
 @keyframes three-dimensions-circle {
     0% {
         transform: rotateX(-100deg) rotate(0);
@@ -312,6 +313,7 @@ a {
 a:hover{
     text-decoration: black;
     color: #FF0000;
+    font
 }
 
 .github {
