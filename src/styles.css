@@ -52,8 +52,14 @@ body {
 }
 
 .item-b {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-items: center;
+    justify-content: center;
     text-align: right;
-    margin-left: 90vw;
+    margin-left: 80%;
     position: absolute;
     margin-top: 40vh;
 
@@ -196,9 +202,10 @@ span {
 }
 
 ul {
-    margin-top: 5vh;
+    margin-right: 40vw;
+    position: relative;
     list-style: none;
-    font-size: 4vw;
+    font-size: 4rem;
     transform-style: preserve-3d;
     animation: three-dimensions-circle 15s linear infinite;
 }
@@ -333,6 +340,13 @@ a {
 }
 
 .github {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    align-items: center;
+    justify-content: center;
+    margin-left: -43%;
     font-family: 'Inter', sans-serif;
     color: #000000;
     font-weight: 600;
